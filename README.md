@@ -1,1 +1,1 @@
-# Airbnb_Churning
+# EDA of Airbnb data
