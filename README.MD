@@ -1,6 +1,8 @@
 
 ## Impact of SF's short-term rental regulation on the supply and pricing of Airbnb listing
 
+### Link to the presentation: https://drive.google.com/open?id=1kbgBahYtDttEf9qDHZhhtpx3_KRkE1Bf
+
 ### Data Pipeline:
 
 Raw data is organized as .gz files on the InsideAirbnb website. To make the data ingestion process accurate and scaleable, I developed a BeautifulSoup script that scraped all the hyperlinks on "http://insideairbnb.com/get-the-data.html". This includes links of files associated with other cities and countries. After that, I developed a function that imports and concatenates all the files associated with Listings, Reviews and Calendar, respectively. There are 45 monthly scraped files for each set of data. Three months were scraped twice - November 2017, December 2017 and January 2018. 
