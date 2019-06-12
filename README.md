@@ -110,7 +110,7 @@ I failed to reject the null hypothesis that the mean difference of prices is 0.
 
 This conclusion is quite counter-intuitive. Several factors may explain the stability of the price. 
 
-* February may be a conventionally slow season for vacation rental reservations and the expected price hike due to the reduction of supplies is not reflected in the "sticker price".
+* February may be a conventionally slow season for short-term rental reservations and the expected price hike due to the reduction of supplies is not reflected in the "sticker price".
 
 * There may have been a significant change in the prices but it's reflected in the Calendar data only.
 
