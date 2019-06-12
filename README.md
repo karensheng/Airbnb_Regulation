@@ -15,7 +15,7 @@ Upon settling a lawsuit with the City of San Francisco in May 2017, Airbnb agree
 
 The primary data source is the <a href="http://insideairbnb.com/get-the-data.html" target="_blank">InsideAirbnb</a> website. 
 
-Due to the fact that the city-specific data has been scraped at roughly a constant time interval (once a month), the combined dataset is essentially a panel data. This is extremely valuable for a wide range of topics, e.g. cohort study, churning and predictive models in general.
+Due to the fact that the city-specific data has been scraped at roughly a constant time interval (once a month), the combined dataset is essentially a panel data. This is extremely valuable for a wide range of topics, e.g. cohort study, churning and forecasting.
 
 ### Data Pipeline:
 
