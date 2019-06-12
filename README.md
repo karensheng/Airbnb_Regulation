@@ -21,13 +21,12 @@ Due to the fact that the city-specific data has been scraped at roughly a consta
 
 Raw data is organized as .gz files on the InsideAirbnb website. To make the data ingestion process accurate and scalable, I developed a BeautifulSoup script that scraped all of the hyperlinks on "http://insideairbnb.com/get-the-data.html". This includes links of files associated with other cities and countries. After that, I developed a function that imports and concatenates city-specific files associated with Listings, Reviews and Calendar, respectively. As of May 31 2019, there were 45 monthly scraped files for each set of data associated with San Francisco. Three months were scraped twice - November 2017, December 2017 and January 2018. These three months coincide with the period when Airbnb urged hosts to register with the city to meet the compliance requirements. 
 
-Note that the concatenated "Calendar" data adds up to more than 100 million observations. The massive size caused crashes of RAM repeatedly. After several attempts, I decided to filter the data to dates with less than 180 days' lead time from the "current" scraped date before the data sets were concatenated. For instance, for the Calendar file scraped on January 1, 2017, only observations up to June 30, 2017 were included in the combined data. 
+Note that the concatenated "Calendar" data adds up to more than 100 million observations. The massive size caused crashes of RAM repeatedly. After several attempts, I decided to filter the data to dates with a maximum of 180 days' lead time from the "current" scraped date. For instance, for the Calendar file scraped on January 1, 2017, only observations up to June 30, 2017 were included in the combined data. 
 
 Overall the data pipeline could be pictured as below:
 
 
-#### BeautifulSoup ----> Index of Hyperlinks ----> Import and Concatenate Raw Data (unzipping .gz files) 
-#### ----> Pickle concatenated data ----> SQLITE3/Pandas
+#### BeautifulSoup ----> Index of Hyperlinks ----> Import and Concatenate Raw Data (unzipping .gz files) ----> Pickle concatenated data ----> SQLITE3/Pandas
 
 Sqlite3 was extensively used. Multiple data tables are stored in a master database called "airbnb.db". The advantage of using Sqlite3 is that the data tables could be queried directly across different Jupyter notebooks.
 
@@ -60,9 +59,9 @@ When we put the screenshot of November 1, 2017 (start of the "transition period"
 
 2. Room Type and Property Type:
 
-Approximately 54.6% of the listings overall are entire home or apartments whereas 40.4% of the listings are for private rooms. Unsurprisingly, only 5% of the listings are for a shared room.
+Approximately 54.6% of the listings overall are entire home or apartments whereas 40.4% of the listings are for private rooms. Unsurprisingly, only 5% of the listings are for a shared room. Right now, when someone visits Airbnb's website, she/he will discover that under the "Home Type" filter tab, there is an additional category called "Hotel Room (Have a private or shared room in a boutique hotel, hostel, and more)". However, this change is not reflected in the data as of May 2019. 
 
-It's noteworthy that the categorization of property types (e.g. apartment, house, loft, condominium) is not standardized in the data. For instance,"apartment" "house" and "condominium" combined account for 89.72% of the listings of private home. However, there are in total 35 categories in property type (e.g. boat, bus).
+At first glimpse, the categorization of property types (e.g. apartment, house, loft, condominium) does not appear to be standardized in the data. For instance,"apartment" "house" and "condominium" combined account for 89.72% of the listings of private home. However, there are in total 35 categories in property type including "Tiny House" and "Treehouse". Browsing the search page on Airbnb reveals that in addition to "property type", there is a filter called "Unique Homes" where a guest could check categories like "Tiny House" and "Treehouse". This seemingly trivial finding highlights the importance of first-hand experience with any given product for any data science exercises. 
 
 ![image](Images/pct%20by%20room%20type.png)
 
@@ -88,7 +87,7 @@ It is noteworthy that the majority of listings appear to remain active for 0-40 
 
 I intended to test whether the average price of listings in February 2018, controlling for room type, went up relative to that in February 2017, as a result of almost 50% reduction of listings. February 2017 was chosen as a baseline because I'd like to eliminate seasonality factors. Furthermore, in order to make the listings comparable, only the listings that were active in both February 2017 and February 2018 were included in the sample. To phrase the question differently - "Did the attrition or removal of almost half of the listings drive up the price of these listings that remained active after the compliance deadline?"
 
-It is common practice in the travel/hospitality industry to set prices dynamically based on the lead time of the reservation. Ideally, such prices, as captured by the Calendar data sets, should be used to calculate the average price across listings. In other words, in addition to controlling for common listings, the amount of lead time should also be controlled for. However, due to time constraints, only the "sticker price" in the Listings data were used. "Sticker price" is the price that a guest sees when she/he visits the page of a particular listing. 
+It is common practice in the travel/hospitality industry to set prices dynamically based on the lead time of the reservation. Ideally, such prices, as captured by the Calendar data sets, should be used to calculate the average price across listings. In other words, in addition to controlling for common listings, the amount of lead time should be controlled for. However, due to time constraints to complete the first phase of this project, only the "sticker price" in the Listings data were used. "Sticker price" is the price that a guest sees when she/he visits the page of a particular listing. 
 
 Even without controlling for common listings, it appears that even though there were almost twice as many listings in February 2017 as in February 2018, the distributions of prices in these two months are very similar.
 
