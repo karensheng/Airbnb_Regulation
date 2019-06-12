@@ -59,7 +59,7 @@ When we put the screenshot of Nov 1 2017 (start of the "transition period") and 
 
 ![image](Images/Feb2_2018_entirehome.PNG)
 
-2. Property Type:
+2. Room Type and Property Type:
 
 Approximately 54.6% of the listings overall are entire home or apartments whereas 40.4% of the listings are for private rooms. Unsurprisingly, only 5% of the listings are for a shared room.
 
@@ -124,7 +124,7 @@ This conclusion is quite counterintuitive. Several factors may explain the stabi
 
 I'd like to continue to look into the prices reflected in the Calendar data. Ideally, the price series should be charted year over year so that it's easy to spot seasonality and any drastic changes, if there were any. As mentioned above, the amount of lead should also be taken into consideration. 
 
-For the 2nd capstone, potentially I could build a predictive model of prices that incorporate amenities, location, seasonality, lead time, etc. 
+For the 2nd capstone, potentially I could build a predictive model of prices that incorporates amenities, location, seasonality, lead time, etc. 
 
 
 
