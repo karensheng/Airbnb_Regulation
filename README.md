@@ -65,7 +65,7 @@ Approximately 54.6% of the listings overall are entire home or apartments wherea
 
 It's noteworthy that the categorization of property types (e.g. apartment, house, loft, condominium) is not standardized in the data. For instance,"apartment" "house" and "condominium" combined account for 89.72% of the listings of private home. However, there are in total 35 categories in property type (e.g. boat, bus).
 
-![image](Images/pct%20by%20property%20type.PNG)
+![image](Images/pct%20by%20room%20type.PNG)
 
 ![image](Images/pct%20of%20property%20type%20entire%20home.PNG)
 
