@@ -53,9 +53,9 @@ The proliferation of STR listings on Airbnb from 2015 to 2017 and the drastic dr
 
 When we put the screenshot of November 1, 2017 (start of the "transition period") and February 2, 2018 (end of the "transition period") side by side, the drastic drop in the density of listings geographically became very clear.
 
-![image](Images/Nov1_2017_entire_home.PNG)
+![Listings of Entire Home - Nov-1-2017](Images/Nov1_2017_entire_home.PNG)
 
-![image](Images/Feb2_2018_entirehome.PNG)
+![Listings of Entire Home - Feb-2-2018](Images/Feb2_2018_entirehome.PNG)
 
 2. Room Type and Property Type:
 
