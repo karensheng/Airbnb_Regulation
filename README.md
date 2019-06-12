@@ -34,7 +34,7 @@ Sqlite3 was extensively used. Multiple data tables are stored in a master databa
 
 
 
-### Takeaways from EDA of the Listings Data
+### Takeaways from EDA
 
 I initially analyzed the entire listings data, but subsequently decided to filter the data to listings of which the minimum nights requirement is less than 30 days. This is consistent with how the SF city authority defines "short-term residential rental". All the discussion below is limited to short-term rentals ("STR") unless explicitly clarified otherwise.
 
