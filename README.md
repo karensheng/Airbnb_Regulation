@@ -63,7 +63,7 @@ When we put the screenshot of Nov 1 2017 (start of the "transition period") and 
 
 Approximately 54.6% of the listings overall are entire home or apartments whereas 40.4% of the listings are for private rooms. Unsurprisingly, only 5% of the listings are for a shared room.
 
-It's noteworthy that the categorization of property types (e.g. apartment, house, loft, condominium) is not standardized in the data. For instance,"apartment" "house" and "condominium" combined account for 89.72% of the listing of private home. However, there are in total 35 categories in property type (e.g. boat, bus).
+It's noteworthy that the categorization of property types (e.g. apartment, house, loft, condominium) is not standardized in the data. For instance,"apartment" "house" and "condominium" combined account for 89.72% of the listings of private home. However, there are in total 35 categories in property type (e.g. boat, bus).
 
 ![image](Images/pct%20by%20property%20type.PNG)
 
