@@ -81,7 +81,7 @@ As a two-sided marketplace, retention of both hosts and guests are important to 
 ![image](Images/longevity%20of%20a%20listing_all%20STR%20listings.png)
 
 
-It is noteworthy that the majority of listings appear to remain active for 0-40 months. It might be an interesting segway to study the characteristics of those listings that have remained active for more than 40 months (e.g. number of reviews, location and amenities). For instance, the chart below shows a clear positive correlation between the longevity of a listing and the number of reviews. Caution that no conclusions about causation could be drawn here. 
+It is noteworthy that the majority of listings appear to remain active for 0-40 months. It might be an interesting segway to study the characteristics of those listings that have remained active for more than 40 months (e.g. number of reviews, location and amenities). For instance, the chart below shows positive correlation between the longevity of a listing and the number of reviews. Caution that no conclusions about causation could be drawn here. 
 
 ![image](Images/longevity%20of%20a%20listing%20vs%20number%20of%20reviews.png)
 
