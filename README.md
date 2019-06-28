@@ -1,8 +1,10 @@
 ﻿## Impact of San Francisco's short-term rental regulation on the supply and pricing of Airbnb listings
 
-### Link to the presentation:
+### The notebook with properly rendered Plotly charts could be viewed at:
 
-https://drive.google.com/open?id=1kbgBahYtDttEf9qDHZhhtpx3_KRkE1Bf
+https://nbviewer.jupyter.org/github/karensheng/Airbnb_EDA/blob/master/Listings%20Data%20EDA_LessThan30Days.ipynb
+
+
 
 
 ### Motivation:
